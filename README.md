@@ -51,5 +51,25 @@ qc.h(q[2])
 This is the result on the QASM simulator.  
 ![qft_sim](https://user-images.githubusercontent.com/45162150/50752911-31697c80-1293-11e9-8fb1-6f7bc9ab4739.png)
 
+This is the result on a real device(ibmq_20_tokyo).  
+![qft_tokyo](https://user-images.githubusercontent.com/45162150/50752939-4c3bf100-1293-11e9-9165-1b9d0622dc1b.png)  
+
+## Inverse Quantum Fourier Transform  
+There is inverse version of QFT, like other kinds of fourier transformation.  
+In order to put this calculation, you can just put cU1(-2π/2^k), instead of cU1(2π/2^k).  Here are the codes for iQFT for 3 qubits.  
+```
+#Inverse Quantum Fourier Transform
+#qc.h(q[0])
+#qc.cu1(-np.pi/2,q[0],q[1])
+#qc.cu1(-np.pi/4,q[0],q[2])
+#qc.h(q[1])
+#qc.cu1(-np.pi/2,q[1],q[2])
+#qc.h(q[2])
+```  
+
+This is the result on the QASM simulator. (This seems impossible to simulate on a real device.)  
+
+````
+```
 
 
