@@ -68,8 +68,8 @@ In order to put this calculation, you can just put cU1(-2π/2^k), instead of cU1
 ```  
 
 This is the result on the QASM simulator. (This seems impossible to simulate on a real device.)  
+![qft iqft_sim](https://user-images.githubusercontent.com/45162150/50753096-fae03180-1293-11e9-8765-95402b69ca0b.png)  
 
-````
-```
+Now you see that outcome is same as the original state(<img src="https://latex.codecogs.com/gif.latex?|000\rangle" title="|000\rangle" />)
 
 
