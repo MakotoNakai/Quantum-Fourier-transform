@@ -49,6 +49,7 @@ qc.h(q[2])
 ```  
 ## Result  
 This is the result on the QASM simulator.  
+![qft_sim](https://user-images.githubusercontent.com/45162150/50752911-31697c80-1293-11e9-8fb1-6f7bc9ab4739.png)
 
 
 
